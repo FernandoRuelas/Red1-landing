@@ -8,7 +8,7 @@
           <!-- <div class="placeholder-img">
             <v-icon size="120" color="white">mdi-antenna</v-icon>
           </div> -->
-          <img src="../assets/img1.png" height="580" width="450" alt="">
+          <img src="../assets/img1.png" height="580" width="450" alt="" class="img1">
         </v-col>
       <v-col cols="12" md="6" class="d-flex flex-column justify-center">
   <h3 class="text-h4 font-weight-bold mb-4" style="color: #F20000;">
@@ -76,8 +76,33 @@
   border-radius: 8px;
 }
 
+
+
 .about-card {
   background-color: #f5f5f5;
   height: 100%;
 }
+
+.img1 {
+  max-width: 100%;
+  height: auto;
+}
+
+/* En pantallas menores a 960px */
+@media (max-width: 960px) {
+  .img1 {
+    max-width: 70%;   /* más pequeña */
+    margin: 0 auto;   /* centrada */
+    display: block;
+  }
+}
+
+/* En pantallas muy pequeñas (ej. móviles < 600px) */
+@media (max-width: 600px) {
+  .img1 {
+    max-width: 85%;
+  }
+}
+
+
 </style>

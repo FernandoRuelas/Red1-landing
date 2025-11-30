@@ -16,11 +16,7 @@
         </v-col>
         <v-col cols="12" md="6">
         
-           <!-- <div class="placeholder-img"> 
-            <img src="../assets/hero-2.png" height="500" width="500" alt="Hero Image" />
-           
-          </div>  -->
-           <img src="../assets/hero-2.png" height="500" width="500" alt="Hero Image" />
+           <img src="../assets/hero-2.png" height="500" width="500" alt="Hero Image"  class="hero-img"/>
         </v-col>
       </v-row>
     </v-container>
@@ -58,6 +54,27 @@ const scrollTo = (section) => {
   line-height: 1.2;
   margin-bottom: 1.5rem;
 }
+.hero-img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* En pantallas menores a 960px */
+@media (max-width: 960px) {
+  .hero-img {
+    max-width: 70%;   /* más pequeña */
+    margin: 0 auto;   /* centrada */
+    display: block;
+  }
+}
+
+/* En pantallas muy pequeñas (ej. móviles < 600px) */
+@media (max-width: 600px) {
+  .hero-img {
+    max-width: 85%;
+  }
+}
+
 
 .hero-subtitle {
   font-size: 1.5rem;
